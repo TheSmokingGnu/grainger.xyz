@@ -2,12 +2,14 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { MainBodyComponent } from './main-body/main-body.component';
+
 
 describe('App: PersonalSite', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent, MainBodyComponent
       ],
     });
   });

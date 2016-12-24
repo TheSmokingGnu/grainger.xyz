@@ -9,6 +9,6 @@ describe('personal-site App', function() {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Zone finder\nBuilt with angular 2 plus material 2 link');
   });
 });

@@ -6,6 +6,6 @@ export class PersonalSitePage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('#md-tab-content-0-0 > div > app-project > div > div:nth-child(1) > md-card')).getText();
   }
 }

@@ -3,6 +3,7 @@
 
 module.exports = function (config) {
   config.set({
+    mime: { 'text/x-typescript': ['ts','tsx'] },
     basePath: '',
     frameworks: ['jasmine', 'angular-cli'],
     plugins: [
