@@ -1,6 +1,43 @@
 <div class="jumbotron row container-fluid">
-  <div class="col-xs-12 col-sm-4"><md-card [style.background]="'lightblue'"><p>Zone finder</p><img class="center-block img-responsive img-rounded" src="assets/what-zone.png"> Built with angular 2 plus material 2 <a href="https://thesmokinggnu.github.io/what-zone/">link</a></md-card></div>
-  <div class="col-xs-12 col-sm-4"><md-card [style.background]="'lightblue'"><p>Random Quote</p><img class="center-block img-responsive img-rounded" src="assets/random-quote.png"> Built with bootstrap <a href="http://codepen.io/petergrainger/full/NbVgEp/">link</a></md-card></div>
+  <div class="col-xs-12 col-sm-4">
+    <md-card>
+      <md-card-header>
+        <md-card-title>Zone finder</md-card-title>
+        <md-card-subtitle>Made with Material 2</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="assets/what-zone.png">
+      <md-card-actions>
+        <button md-button (click)="goToPage('whatZone')">PAGE</button>
+        <button md-button (click)="goToCode('whatZone')">CODE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
 
-  <div class="col-xs-12 col-sm-4"><md-card [style.background]="'lightblue'">Project 1</md-card></div>
+  <div class="col-xs-12 col-sm-4">
+    <md-card>
+      <md-card-header>
+        <md-card-title>Random Quote</md-card-title>
+        <md-card-subtitle>Made with Bootstrap</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="assets/random-quote.png">
+      <md-card-actions>
+        <button md-button (click)="goToPage('randomQuote')">PAGE</button>
+        <button md-button (click)="goToCode('randomQuote')">CODE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
+
+  <div class="col-xs-12 col-sm-4">
+    <md-card>
+      <md-card-header>
+        <md-card-title>Fan Page</md-card-title>
+        <md-card-subtitle>Made with bootstrap</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="assets/b-rob.png">
+      <md-card-actions>
+        <button md-button (click)="goToPage('fanPage')">PAGE</button>
+        <button md-button (click)="goToCode('fanPage')">CODE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
 </div>

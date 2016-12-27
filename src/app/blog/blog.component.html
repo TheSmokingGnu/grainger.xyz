@@ -1,4 +1,16 @@
 <div class= "jumbotron container-fluid">
-    <h1>Some more tab content</h1>
-    <p>...</p>
+    <h1>Phantomjs 2.0 on EC2 instance</h1>
+    <h4>Sun, Oct 18, 2015</h4>
+    <h2>What’s this all about?</h2>
+<p>
+  I’ve been working on a project that uses phantomjs v1.9.x to output a PDF report. Because of the seemingly unrelated vunerabilities to SSL due to the POODLE attacks attacking a vunerability in TLS v1.0-1.2 meaning I needed to upgrade to TLS v2.0 if I still want to use a secure https connection… which isn’t supported in phantomjs v1.9.x</p>
+<h2>So, what does that all mean?</h2>
+<p>That means that phantomjs stops working if you upgrade your https certificate! There is some hope though with phantomjs v2.0, this new release uses the new QT and webkit library (which does support the new encryption). Phantomjs 2.0 binary is available to download for windows and mac, but no Linux! As we are running on AWS EC2 instances and using the default AMI based on redhat there is no binary already compiled…</p>
+<h2>What? So what happens now?</h2>
+<p>You can download the source and follow the build instructions to build on your version of linux. I’ve compiled a binary to work on the amazon AMI for your convenience you can download here this should save you pretty much a day compiling, see here for the link: <a href="https://github.com/TheSmokingGnu/compiledPhantomjsBin">compiled binary</a>
+</p>
+
+<h2>Phew, so… we done now?</h2>
+<p>If only… phantomjs v2.0 is pretty new so expect many bugs… I’m sure they will be fixed at some point, and it’s open source so you can fix it yourself. I was battling a while with this You may find your own battle. I only hope this speeds you up a little bit and the karma comes back to me one day :)
+</p>
 </div>
