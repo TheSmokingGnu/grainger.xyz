@@ -5,13 +5,16 @@ import { DebugElement } from '@angular/core';
 
 import { ProjectComponent } from './project.component';
 
+import {MaterialModule} from '@angular/material';
+
 describe('ProjectComponent', () => {
   let component: ProjectComponent;
   let fixture: ComponentFixture<ProjectComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProjectComponent ]
+      declarations: [ ProjectComponent ],
+      imports:[MaterialModule.forRoot()]
     })
     .compileComponents();
   }));

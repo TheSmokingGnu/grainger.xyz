@@ -4,6 +4,11 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MainBodyComponent } from './main-body.component';
+import { AboutYouComponent } from '../about-you/about-you.component';
+import { ProjectComponent } from '../project/project.component';
+import { BlogComponent } from '../blog/blog.component';
+import {MaterialModule} from '@angular/material';
+
 
 describe('MainBodyComponent', () => {
   let component: MainBodyComponent;
@@ -11,7 +16,8 @@ describe('MainBodyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainBodyComponent ]
+      declarations: [ MainBodyComponent, AboutYouComponent, BlogComponent, ProjectComponent],
+      imports:[MaterialModule.forRoot()]
     })
     .compileComponents();
   }));
