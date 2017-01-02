@@ -7,8 +7,7 @@ import { MaterialModule } from '@angular/material';
   selector: 'app-main-body',
   templateUrl: './main-body.component.html',
   styleUrls: ['./main-body.component.css'],
-  providers: [MaterialModule],
-  entryComponents: [AboutYouComponent, BlogComponent, ProjectComponent]
+  providers: [MaterialModule, AboutYouComponent, BlogComponent, ProjectComponent]
 })
 export class MainBodyComponent {
 }
